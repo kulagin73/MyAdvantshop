@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Advantshop 2021</title>
+    <base href="@Advantshop.Services.UrlService.GetUrl()" />
+    <link rel="stylesheet" href="~/Content/index-style.css">
+</head>
+<body>
+    <div class="page-header">
+        <div class="container1">
+            <div class="header-top">
+                <ul>
+                    <li><a class="popap_link" href="#popap"><img src="img/Path.jpg"></a></li>
+                    <li><a class="popap_link" href="#popap">Москва</a></li>
+                    <li><a href="/">8 800 550 83 13 <small>  Заказать звонок</small></a></li>
+                    <li><a href="/">Вход и регистрация</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="header-bottom">
+                <div class="header-bottom-control">
+                    <img class="header-bottom-img" src="img/advantshop.jpg">
+
+                    <div class="header-bottom-input-trans">
+                        <div class="header-bottom-input">
+                            <img src="img/loupe.png">
+                            <input type="search" placeholder="Поиск по товарам" id="textInput">
+                        </div>
+                    </div>
+
+                    <div class="header-bottom-icons">
+                        <img src="img/heart.png">
+                        <img src="img/гамбургер.png">
+                        <img src="img/корзина 2.png">
+                        <a href="basket.html">Корзина</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom-Two">
+        <div class="sidebar-button"><a href="/"><img src="img/catalog.png"></a></div>
+        <div class="menu">
+            <ul class="menu-ul">
+                <li class="firstOfMenu">
+                    <a href="#">О магазине</a><a class="menu-in-down"><i class="arrow-down"></i></a>
+                    <ul class="menu-down">
+                        <li><a href="#">Возможности</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#">Шаблоны</a></li>
+                        <li><a href="#">Модули</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Интерации</a></li>
+                    </ul>
+                </li>
+                <li class="secondOfMenu"><a href="/">Скидки</a></li>
+                <li><a href="/">Доставка и оплата</a></li>
+                <li><a href="/">Услуги</a></li>
+                <li><a href="/">Акции</a></li>
+                <li><a href="/">Блог</a></li>
+                <li><a href="/">Контакты</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    @RenderBody()
+    
+
+    <div class="form">
+        <ul>
+            <li><p>Подписка на новости</p></li>
+            <li><input type="email" placeholder="Ваш e-mail"></li>
+            <li><button>Подписаться</button></li>
+        </ul>
+    </div>
+
+    <div class="page-footer">
+        <div class="wrapper">
+            <div class="footer-top">
+                <div class="footer-menu">
+                    <ul>
+                        <li class="footer-menu-first">Каталог</li>
+                        <li><a href="#">Телефоны</a></li>
+                        <li><a href="#">Техника</a></li>
+                        <li><a href="#">Одежда/обувь</a></li>
+                        <li><a href="#">Детские товары</a></li>
+                        <li><a href="#">Цветы Еда/напитки</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu">
+                    <ul>
+                        <li class="footer-menu-first">Информация</li>
+                        <li><a href="#">О магазине</a></li>
+                        <li><a href="#">Бренды</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Бонусная программа</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu">
+                    <ul>
+                        <li class="footer-menu-first">Личный кабинет</li>
+                        <li><a href="#">Вход</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                        <li><a href="#">Забыли пароль?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li class="footer-menu-first">Мы в социальных сетях</li>
+                        <li><a href="#">Вконтакте</a></li>
+                        <li><a href="#">Фейсбук</a></li>
+                        <li><a href="#">Твиттер</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img class="certificate-foto" src="img/img-for-footer.png">
+            <img class="for-you" src="img/подарок.png">
+            <p class="for-you-p">ПОДАРОЧНЫЙ<br>СЕРТИФИКАТ</p>
+
+            <div class="footer-bottom">
+                <p>© 2020 AdvantShop</p>
+                <a href="#">Лицензионное соглашение</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div id="popap" class="popap">
+        <a href="#" class="popap__area"></a> <!--закрыть попап если нажать в не его-->
+        <div class="popap__body">
+            <div class="popap__content">
+                <a href="#" class="popap__close close-popap"><img src="img/close.svg"></a>
+                <div class="popap__title">
+                    <h2>Где вы находитесь?</h2>
+                    <hr>
+                    <ul>
+                        <li class="active"><img src="img/flarRU.png"><p>Россия</p></li>
+                        <li><img src="img/flagUK.png"><p>Украина</p></li>
+                        <li><img src="img/flagBEL.png"><p>Беларусь</p></li>
+                        <li><img src="img/flagBEL.png"><p>Казахстан</p></li>
+                    </ul>
+                </div>
+                <div class="popap__text">
+
+                    <div class="popap-form-town">
+                        <p>Ваш город:</p>
+                        <div class="popap-form-container">
+                            <div class="popap-form-town-input">
+                                <img src="img/loupe.png">
+                                <input type="text" placeholder="Введите город">
+                            </div>
+                            <button>Выбрать</button>
+                        </div>
+                    </div>
+
+                    <div class="towns-all">
+                        <div class="towns">
+                            <ul>
+                                <li><a href="#">Ульяновск</a></li>
+                                <li><a href="#">Волгоград</a></li>
+                                <li><a href="#">Воронеж</a></li>
+                                <li><a href="#">Екатеринбург</a></li>
+                                <li><a href="#">Казань</a></li>
+                                <li><a href="#">Краснодар</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="towns">
+                            <ul>
+                                <li><a href="#">Новосибирск</a></li>
+                                <li><a href="#">Пермь</a></li>
+                                <li><a href="#">Ростов-на-Дону</a></li>
+                                <li><a href="#">Самара</a></li>
+                                <li><a href="#">Санкт-Петербург</a></li>
+                                <li><a href="#">Уфа</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="towns">
+                            <ul>
+                                <li><a href="#">Москва</a></li>
+                                <li><a href="#">Барнаул</a></li>
+                                <li><a href="#">Астрахань</a></li>
+                                <li><a href="#">Владивосток</a></li>
+                                <li><a href="#">Иркутск</a></li>
+                                <li><a href="#">Омск</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="towns">
+                            <ul>
+                                <li><a href="#">Челябинск</a></li>
+                                <li><a href="#">Тюмень</a></li>
+                                <li><a href="#">Томск</a></li>
+                                <li><a href="#">Тольятти</a></li>
+                                <li><a href="#">Саратов</a></li>
+                                <li><a href="#">Мурманск</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/index.js"></script>
+</body>
+</html>
