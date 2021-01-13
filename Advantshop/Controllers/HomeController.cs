@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Advantshop.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,14 @@ namespace Advantshop.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+
+            using (var myDb = new Model1())
+            {
+
+                var str = myDb.Category.ToList();
+
+                return View(str);
+            }
         }
 
         public ActionResult About()

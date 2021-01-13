@@ -1296,7 +1296,8 @@ top:70px;
 }
 .sidebar-menu ul {
     width:263px;
-    height: 530px;
+    height:auto;
+    /*height: 530px;*/
     padding: 0;
     margin:0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);

@@ -1,4 +1,9 @@
-﻿@{
+﻿@using Advantshop.Models;
+@using System.Linq;
+
+@model List<Category>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -269,17 +274,15 @@
             <div class="sidebar-header">
                 <div class="sidebar-menu">
                     <ul>
-                        <li><p class="sidebar-par">Одежда</p><p class="arr-rigth"><i class="li-right li-right1"></i></p></li>
-                        <li><p class="sidebar-par">Мебель</p><p class="arr-rigth"><i class="li-right li-right2"></i></p></li>
-                        <li><p class="sidebar-par">Бытовая техника</p><p class="arr-rigth"><i class="li-right li-right3"></i></p></li>
-                        <li><p class="sidebar-par">Спортивные товары</p><p class="arr-rigth"><i class="li-right li-right4"></i></p></li>
-                        <li><p class="sidebar-par">Косметика</p><p class="arr-rigth"><i class="li-right li-right5"></i></p></li>
-                        <li><p class="sidebar-par">Садовая техника</p><p class="arr-rigth"><i class="li-right li-right6"></i></p></li>
-                        <li><p class="sidebar-par">Сантехника</p><p class="arr-rigth"><i class="li-right li-right7"></i></p></li>
-                        <li><p class="sidebar-par">Строительные материалы</p><p class="arr-rigth"><i class="li-right li-right8"></i></p></li>
-                        <li><p class="sidebar-par">Автотехника</p><p class="arr-rigth"><i class="li-right li-right9"></i></p></li>
-                        <li><p class="sidebar-par">Еда</p><p class="arr-rigth"><i class="li-right li-right10"></i></p></li>
-                        <li><p class="sidebar-par">Разработка сайтов</p><p class="arr-rigth"><i class="li-right li-right11"></i></p></li>
+
+                        @foreach (var p in Model)
+                        {
+                            if (p.CategoryID > 0)
+                            {
+                                <li><p class="sidebar-par">@p.Name</p><p class="arr-rigth"><i class="li-right li-right1"></i></p></li>
+                            }
+                        }
+              
                     </ul>
                 </div>
             </div>
